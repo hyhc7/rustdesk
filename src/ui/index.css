@@ -413,6 +413,16 @@ svg#refresh-password:hover {
 li:disabled, li:disabled:hover {
     color: color(lighter-text);
     background: color(menu);
+    opacity: 0.8;
+}
+
+.grey-text {
+    color: #888 !important;
+}
+
+input.grey-text,
+textarea.grey-text {
+    color: #888 !important;
 }
 
 @media platform == "OSX" {

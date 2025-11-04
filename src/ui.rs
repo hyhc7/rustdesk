@@ -675,6 +675,14 @@ impl UI {
     pub fn check_hwcodec(&self) {
         check_hwcodec()
     }
+
+    fn is_option_fixed(&self, key: String) -> bool {
+        crate::ui_interface::is_option_fixed(&key)
+    }
+
+    fn get_builtin_option(&self, key: String) -> String {
+        crate::ui_interface::get_builtin_option(&key)
+    }
 }
 
 impl sciter::EventHandler for UI {
@@ -771,6 +779,8 @@ impl sciter::EventHandler for UI {
         fn verify2fa(String);
         fn check_hwcodec();
         fn verify_login(String, String);
+        fn is_option_fixed(String);
+        fn get_builtin_option(String);
     }
 }
 
