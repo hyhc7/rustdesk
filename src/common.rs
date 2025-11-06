@@ -1024,7 +1024,8 @@ fn get_api_server_(api: String, custom: String) -> String {
             return format!("http://{}", s);
         }
     }
-    "https://admin.rustdesk.com".to_owned()
+	"http://rustdesk.phichem.com.cn:21114".to_owned() //修改默认配置为自有服务器地址
+    // "https://admin.rustdesk.com".to_owned()
 }
 
 #[inline]
